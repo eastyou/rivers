@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rivers"
+version = "0.1.0"
+description = "中国主要河流查询与比较工具：长度、发源地、注入海域、流经省份、排名对比与练习纸"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["地理", "河流", "长江", "黄河", "初中", "排名", "练习纸", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Natural Language :: Chinese (Simplified)",
+]
+
+[project.scripts]
+rivers = "rivers.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/rivers"
+Source = "https://github.com/eastyou/rivers"
+
+[tool.setuptools]
+packages = ["rivers"]
